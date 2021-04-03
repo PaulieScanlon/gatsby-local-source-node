@@ -1,0 +1,9 @@
+html,
+body {
+  font-family: 'system-ui';
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+}

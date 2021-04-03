@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-local-source-node",
+  "version": "1.0.0",
+  "description": "A demo repo for sourcing local data using gatsby-node.js",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/gatsby-local-source-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/gatsby-local-source-node/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/gatsby-local-source-node#readme",
+  "dependencies": {
+    "gatsby": "^3.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
