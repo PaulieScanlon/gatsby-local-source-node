@@ -1,4 +1,4 @@
-const MOCK_DATA = require('./content/MOCK_DATA.json');
+const { readdirSync, readFileSync } = require('fs');
 
 // Docs for sourceNodes
 // https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#sourceNodes
@@ -7,7 +7,13 @@ const MOCK_DATA = require('./content/MOCK_DATA.json');
 // https://www.gatsbyjs.com/docs/reference/config-files/actions/#createNode
 
 exports.sourceNodes = ({ actions: { createNode }, createContentDigest }) => {
-  MOCK_DATA.forEach((data, index) => {
+  const DIR = './content';
+
+  files = readdirSync(DIR);
+
+  files.forEach((file, index) => {
+    let data = JSON.parse(readFileSync(`${DIR}/${file}`));
+
     createNode({
       ...data,
       id: `post-${index}`,
